@@ -156,4 +156,5 @@ func init() {
 	checkCmd.Flags().BoolP("defender", "d", false, "Use Windows Defender to scan the binary")
 	checkCmd.Flags().BoolP("kaspersky", "k", false, "Use Kaspersky to scan the binary")
 	checkCmd.Flags().BoolP("debug", "D", false, "Enable debug mode")
+	checkCmd.Flags().String("kaspersky-path", "", "Custom path to Kaspersky")
 }
