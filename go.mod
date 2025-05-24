@@ -1,4 +1,4 @@
-module github.com/gatariee/gocheck
+module github.com/millen93/gocheck
 
 go 1.21.1
 

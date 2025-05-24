@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	utils "github.com/gatariee/gocheck/utils"
+	utils "github.com/millen93/gocheck/utils"
 )
 
 func KasperskyScan(file string, scanPath string, args ...string) (string, error) {

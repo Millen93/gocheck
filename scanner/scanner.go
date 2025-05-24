@@ -3,7 +3,7 @@ package scanner
 import (
 	"sync"
 
-	utils "github.com/gatariee/gocheck/utils"
+	utils "github.com/millen93/gocheck/utils"
 )
 
 type Scanner struct {
