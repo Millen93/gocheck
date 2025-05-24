@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	utils "github.com/gatariee/gocheck/utils"
+	utils "github.com/millen93/gocheck/utils"
 )
 
 type DefenderScanner struct {
