@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	scanner "github.com/gatariee/gocheck/scanner"
-	utils "github.com/gatariee/gocheck/utils"
+	scanner "github.com/millen93/gocheck/scanner"
+	utils "github.com/millen93/gocheck/utils"
 )
 
 var checkCmd = &cobra.Command{

@@ -8,7 +8,7 @@ import (
 
 	"github.com/Velocidex/amsi"
 
-	utils "github.com/gatariee/gocheck/utils"
+	utils "github.com/millen93/gocheck/utils"
 )
 
 type AMSIScanner struct{}
