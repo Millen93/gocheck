@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gatariee/gocheck/cmd"
+	"github.com/millen93/gocheck/cmd"
 )
 
 var suffixes = []string{".exe", ".dll", ".sys", ".drv", ".ps1"}

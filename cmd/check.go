@@ -30,6 +30,7 @@ var checkCmd = &cobra.Command{
 		defender, _ := cmd.Flags().GetBool("defender")
 		debug, _ := cmd.Flags().GetBool("debug")
 		kaspersky, _ := cmd.Flags().GetBool("kaspersky")
+		kasperskyPath, _ := cmd.Flags().GetString("kaspersky-path")
 
 		//
 		// if no args are passed, then use defender
@@ -62,10 +63,14 @@ var checkCmd = &cobra.Command{
 
 		var avp string
 		if kaspersky {
-			avp, err = scanner.FindKaspersky()
-			if err != nil {
-				utils.PrintErr(err.Error())
-				return
+			if kasperskyPath == "" {
+				avp, err = scanner.FindKaspersky()
+				if err != nil {
+					utils.PrintErr(err.Error())
+					return
+				}
+			} else {
+				avp = kasperskyPath
 			}
 
 			if avp == "" {
